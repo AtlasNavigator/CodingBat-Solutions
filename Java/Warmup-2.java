@@ -38,6 +38,13 @@ int countXX(String str) {
   return count;
 }
 
+//Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+//doubleX("axxbb") → true
+//doubleX("axaxax") → false
+//doubleX("xxxxx") → true
+boolean doubleX(String str) {
+  int i = str.indexOf("x");
+  if (i == -1) return false; // no "x" at all
 
 // Given a string, return a new string made of every other char starting with the first,
 // so "Hello" yields "Hlo". 
