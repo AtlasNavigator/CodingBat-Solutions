@@ -166,10 +166,10 @@ public String stringX(String str)
 		for(int i = 1; i < len; i++)
 		{
 			if(str.charAt(i) != 'x')
-				stbuild.append(str.charAt(i);
+				stbuild.append(str.charAt(i));
 		}
 		stbuild.append(str.charAt(len));
-		return stbuild.toString()
+		return stbuild.toString();
 	}
 	else
 		return str;
