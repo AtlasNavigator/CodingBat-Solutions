@@ -130,17 +130,12 @@ public boolean arrayFront9(int[] nums)
 
 
 // Given an array of ints, return true if .. 1, 2, 3, .. appears in the array somewhere. 
-public boolean array123(int[] nums)
-{
-	int current = 1;
-	for(int i = 0; i < nums.length-2; i++)
-	{
-		if(nums[i] == 1 && nums[i+1] == 2 && nums[i+2])
-			return true;
-	}
-	return false;
+public boolean array123(int[] nums) {
+  for (int i=0; i < (nums.length-2); i++) {
+    if (nums[i]==1 && nums[i+1]==2 && nums[i+2]==3) return true;
+  }
+  return false;
 }
-
 
 // Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring.
 // So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings. 
