@@ -46,6 +46,10 @@ boolean doubleX(String str) {
   int i = str.indexOf("x");
   if (i == -1) return false; // no "x" at all
 
+ if (i+1 >= str.length()) return false; // check i+1 in bounds?
+  return str.substring(i+1, i+2).equals("x");
+}
+
 // Given a string, return a new string made of every other char starting with the first,
 // so "Hello" yields "Hlo". 
 public String stringBits(String str)
